@@ -1,12 +1,18 @@
 import { defineConfig } from 'dumi';
 
+const isDev = process.env.NODE_ENV === 'development';
+export const basePath = isDev ? '/' : '/XForm/';
+const logoPath = `${basePath}logo.png`;
+
 export default defineConfig({
+  base: basePath,
+  publicPath: basePath,
   outputPath: 'docs-dist',
-  favicons: ['/logo.png'],
+  favicons: [logoPath],
   themeConfig: {
     title: 'XForm',
     name: 'XForm',
-    logo: '/logo.png',
+    logo: logoPath,
     socialLinks: {
       github: 'https://github.com/totalizer-team/XForm',
     },
