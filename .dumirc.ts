@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 const isDev = process.env.NODE_ENV === 'development';
 export const basePath = isDev ? '/' : '/XForm/';
-const logoPath = `${basePath}logo.png`;
+export const logoPath = `${basePath}logo.png`;
 
 export default defineConfig({
   base: basePath,

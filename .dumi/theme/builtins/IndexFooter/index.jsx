@@ -1,6 +1,7 @@
 import { Box, Button, Stack, Typography } from '@mui/material';
 import React from 'react';
 import { history } from 'umi';
+
 export default () => {
   return (
     <Box
@@ -17,7 +18,7 @@ export default () => {
           height: 100,
           margin: '0 auto',
           margin: '0 auto',
-          background: 'url(./logo.png) center center no-repeat',
+          background: 'url(https://s2.loli.net/2024/09/14/X1jv7en4szq3hwM.png) center center no-repeat',
           backgroundSize: '125% 125%',
         }}
       ></Box>
